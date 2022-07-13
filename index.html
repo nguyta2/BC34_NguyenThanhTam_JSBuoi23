@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h3>Bài tập 1: Tính lương nhân viên</h3>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center">
+          Tính lương nhân viên
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <p>Số ngày làm</p>
+            <input class="form-control" id="soNgayLam" type="number" />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-secondary" id="btnTinhLuong">
+            Tính Lương
+          </button>
+          <div class="mt-2" id="thongBaoTinhLuong"></div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <h3>CASE STUDY (THẢO LUẬN NHÓM)</h3>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center">
+          Quyên Góp Từ Thiện
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <lable>Tên phim</lable>
+            <input class="form-control" id="movieName" type="text" />
+          </div>
+          <div class="form-group">
+            <lable>Giá vé người lớn</lable>
+            <input class="form-control" id="elderPrice" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Số vé người lớn đã bán</lable>
+            <input class="form-control" id="numElderSell" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Giá vé trẻ em</lable>
+            <input class="form-control" id="childrenPrice" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Số vé trẻ em đã bán</lable>
+            <input class="form-control" id="numChildrenSell" type="number" />
+          </div>
+          <div class="form-group">
+            <p>Phần trăm từ thiện</p>
+            <select class="form-control" id="charityPercent">
+              <option value="0.3">30%</option>
+              <option value="0.2">20%</option>
+              <option value="0.15">15%</option>
+              <option value="0.1">10%</option>
+              <option value="0.05">5%</option>
+            </select>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success" id="btnSubmit">Submit</button>
+          <div class="mt-2" id="thongBao"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài 2: Tính giá trị trung bình -->
+    <hr />
+    <h3>Bài 2: Tính giá trị trung bình</h3>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center">
+          Tính giá trị trung bình
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <lable>Số thực 1:</lable>
+            <input class="form-control" id="float1" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Số thực 2:</lable>
+            <input class="form-control" id="float2" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Số thực 3:</lable>
+            <input class="form-control" id="float3" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Số thực 4:</lable>
+            <input class="form-control" id="float4" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Số thực 5:</lable>
+            <input class="form-control" id="float5" type="number" />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success" id="btnAverage">
+            Average Calculator
+          </button>
+          <div class="mt-2" id="averageDisplay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bài 3: Quy đổi tiền -->
+    <hr />
+    <h3>Bài 3: Quy đổi tiền</h3>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center">
+          Quy đổi USD sang VND
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <p>Giá USD hiện nay: 23.500 VND</p>
+          </div>
+          <div class="form-group">
+            <lable>Số tiền USD:</lable>
+            <input class="form-control" id="numUSD" type="number" />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success" id="btnExchange">
+            Exchange Money
+          </button>
+          <div class="mt-2" id="exchangeDisplay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bài 4: Tính diện tích, chu vi hình chữ nhật -->
+    <hr />
+    <h3>Bài 4: Tính diện tích, chu vi hình chữ nhật</h3>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center">
+          Tính diện tích, chu vi hình chữ nhật
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <lable>Chiều dài:</lable>
+            <input class="form-control" id="length" type="number" />
+          </div>
+          <div class="form-group">
+            <lable>Chiều rộng:</lable>
+            <input class="form-control" id="width" type="number" />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success" id="btnCalculator">
+            Perimeter & Area Calculator
+          </button>
+          <div class="mt-2" id="calculatorDisplay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bài 5: Tính tổng 2 ký số -->
+    <hr />
+    <h3>Bài 5: Tính tổng 2 ký số</h3>
+    <div class="d-flex justify-content-center">
+      <div class="card w-50">
+        <div class="card-header bg-dark text-white text-center">
+          Tính tổng 2 ký số
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <lable>Nhập số 2 chữ số:</lable>
+            <input class="form-control" id="num" type="number" />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-success" id="btnCalculatorNumber">
+            Calculator
+          </button>
+          <div class="mt-2" id="calculatorNumberDisplay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
